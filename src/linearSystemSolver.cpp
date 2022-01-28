@@ -1,7 +1,7 @@
 #include "linearSystemClass.h"
 #include "matrixClass.h"
 #include <iostream>
-#include <cstdio>
+#include <conio.h>
 
 int main()
 {
@@ -52,6 +52,6 @@ int main()
 
 
 	std::cout << "press anything to exit" << std::endl;
-	std::getchar();
+	_getch();
 	return 0;
 }
