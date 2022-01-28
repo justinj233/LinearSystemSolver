@@ -1,7 +1,6 @@
 #include "linearSystemClass.h"
 #include "matrixClass.h"
 #include <iostream>
-#include <cstdio>
 
 int main()
 {
@@ -51,7 +50,11 @@ int main()
 
 
 
-	std::cout << "press anything to exit" << std::endl;
-	std::getchar();
+	std::cout << "enter q to quit" << std::endl;
+	char ch = 'a';
+	while (ch != 'q')
+	{
+		std::cin >> ch;
+	}
 	return 0;
 }
