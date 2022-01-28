@@ -16,6 +16,14 @@ int main()
 
 	std::cout << "Enter details for the matrix b:" << std::endl;
 	b.getMatrix();
+	
+	if (b.returnrows() != A.returncolumns())
+	{
+		std::cout << "The number of rows of b must equal the number of columns of A." << std::endl;
+		std::cout << "press anything to exit" << std::endl;
+		_getch();
+		return 0;
+	}
 
 	matrix ACopy;
 	matrix bCopy;
